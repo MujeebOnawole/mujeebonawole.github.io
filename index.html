@@ -60,26 +60,27 @@
   <section id="research" class="statement">
     <h2>When should we trust an AI prediction?</h2>
     <p>
-      A model with 90 percent test accuracy still gets one prediction in ten wrong, and its accuracy score does not say
-      which one. For a chemist deciding which compound to make next, or a clinician reading a genetic risk score, that
-      single prediction is what matters.
+      AI models can now predict whether a molecule will kill bacteria, how well a material will capture carbon dioxide,
+      or a person&rsquo;s genetic risk of disease. Even a good model is sometimes wrong, and its overall accuracy does not
+      tell you which predictions those are. That matters when each prediction decides the next step, such as which compound
+      a chemist makes, which material an engineer tests, or how a doctor reads a risk score.
     </p>
     <p>
-      My research answers the question one prediction at a time. An ensemble of models is asked two things. Do the models
-      agree on the answer? Do they agree on the reason, meaning the atoms, fragments or sequence positions that drive the
-      prediction? The two answers place every prediction in one of four trust scenarios, so a user can act on the reliable
-      ones and send the rest for checking.
+      My work gives every prediction its own trust label. Several models make the same prediction and each one explains
+      it by showing which parts of the molecule, material or DNA sequence drove the answer. When the models agree on both
+      the answer and the reason, the prediction is labelled trustworthy. When they disagree, it is flagged for a closer
+      look before anyone acts on it. In a study of carbon-capture materials, predictions labelled trustworthy were close to
+      the true value about 84 percent of the time, against about 8 percent for flagged ones.
     </p>
     <p>
-      Because the framework works on model outputs and attributions rather than on any one kind of data, it carries across
-      scientific domains. In metal-organic frameworks, for example, predictions labelled trustworthy fell within 20 percent
-      error 83.8 percent of the time, compared with 8.3 percent for predictions flagged as low trust. The projects that
-      follow apply the same question to five different areas of science.
+      Explainability is what makes this possible. It lets a scientist see why the model reached its answer, judge whether
+      that reason makes sense, and decide with confidence whether to move forward. The aim is AI that is safer and more
+      reliable to use for real decisions, in any field where a wrong prediction has a cost.
     </p>
   </section>
 
   <section id="programme" class="programme">
-    <h2>One question, five domains</h2>
+    <h2>Cross-domain research</h2>
 
     <div class="core">
       <span class="core-label">Shared method</span>
@@ -169,24 +170,14 @@
         </div>
       </article>
 
-      <article class="domain foundations">
-        <h3>Foundations in first-principles chemistry</h3>
-        <p class="q">The programme grew out of quantum chemistry.</p>
-        <ul>
-          <li>Density functional theory and ab initio molecular dynamics of metal chelation, scale dissolution, corrosion and gas adsorption at Qatar University (2017&ndash;2022).</li>
-          <li>Computational work that supported US Patent 11,591,509 B2.</li>
-        </ul>
-        <div class="paper-links">
-          <a href="https://patents.google.com/patent/US11591509B2/en" target="_blank" rel="noopener">Patent</a>
-        </div>
-      </article>
-
     </div>
   </section>
 
   <section id="software" class="software">
     <h2>Open software and web tools</h2>
     <p class="section-intro">Each tool returns a prediction, an explanation and a trust label. No coding is needed to use the apps.</p>
+    <details class="tools-toggle">
+      <summary>Show all tools and links</summary>
     <table class="tools">
       <thead><tr><th>Tool</th><th>What it predicts</th><th>Links</th></tr></thead>
       <tbody>
@@ -208,6 +199,7 @@
           <td><a href="https://github.com/MujeebOnawole/RegTrust-XAI" target="_blank" rel="noopener">Code</a></td></tr>
       </tbody>
     </table>
+    </details>
     <p class="section-intro">Apps are hosted on Hugging Face and may take a minute to wake up. All code is on <a href="https://github.com/MujeebOnawole" target="_blank" rel="noopener">GitHub</a>.</p>
   </section>
 

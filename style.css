@@ -212,9 +212,6 @@ main h2 {
   flex-direction: column;
 }
 
-.domain.foundations {
-  border-top-color: var(--text-muted);
-}
 
 .domain h3 {
   margin: 0 0 6px;
@@ -443,4 +440,22 @@ footer {
   .tools th:nth-child(2), .tools td:nth-child(2) {
     display: none;
   }
+}
+
+/* Collapsible tools list */
+
+.tools-toggle {
+  margin-bottom: 12px;
+}
+
+.tools-toggle summary {
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--accent);
+  padding: 8px 0;
+}
+
+.tools-toggle[open] summary {
+  margin-bottom: 8px;
 }
