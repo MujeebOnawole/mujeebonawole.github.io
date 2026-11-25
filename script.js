@@ -102,9 +102,12 @@ document.addEventListener("DOMContentLoaded", function () {
       var title = make("h3", "", one("h3", card).textContent);
       title.id = "toolbox-title";
       toolboxBody.appendChild(title);
-      var image = one("figure img", panel).cloneNode();
-      image.loading = "eager";
-      toolboxBody.appendChild(image);
+      var figure = one("figure img", panel);
+      if (figure) {
+        var image = figure.cloneNode();
+        image.loading = "eager";
+        toolboxBody.appendChild(image);
+      }
       var text = one(".work-text", panel).cloneNode(true);
       one(".work-venue", text).remove();
       one("h3", text).remove();
