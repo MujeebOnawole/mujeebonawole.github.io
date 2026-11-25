@@ -3,32 +3,47 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Abdulmujeeb Onawole</title>
+<title>Abdulmujeeb Onawole | Trust-Aware &amp; Explainable AI</title>
 <meta name="description" content="Abdulmujeeb T. Onawole, PhD. AI for Science, trust-aware AI and computational chemistry. Research on when an AI prediction can be trusted, across drug discovery, materials, metal chemistry, proteins and genomics.">
-<link rel="stylesheet" href="style.css">
+<meta name="color-scheme" content="light">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://mujeebonawole.github.io/">
+<meta property="og:title" content="Abdulmujeeb T. Onawole, PhD">
+<meta property="og:description" content="Papers and open web tools by Abdulmujeeb T. Onawole, PhD.">
+<meta property="og:image" content="https://mujeebonawole.github.io/photo.jpg">
+<meta name="twitter:card" content="summary">
+<link rel="preload" href="assets/fonts/lora-600.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="style.css?v=7">
 </head>
 <body>
+<a class="skip" href="#main">Skip to content</a>
 
-<nav class="site-nav">
-  <a href="#research">Research</a>
-  <a href="#programme">Projects</a>
-  <a href="#software">Software</a>
-  <a href="#publications">Publications</a>
-  <a href="cv.pdf" target="_blank">CV</a>
+<nav class="site-nav" aria-label="Main">
+  <div class="progress" aria-hidden="true"></div>
+  <div class="wrap">
+    <a class="brand" href="#top">A. T. Onawole</a>
+    <div class="nav-links">
+      <a href="#programme">Research</a>
+      <a href="#software">Web tools</a>
+      <a href="#publications">Publications</a>
+      <a href="#research">Approach</a>
+      <a href="cv.pdf" target="_blank">CV</a>
+    </div>
+  </div>
 </nav>
 
-<header class="profile">
-  <img src="photo.jpg" alt="Abdulmujeeb Onawole" class="profile-photo">
-  <div class="profile-text">
-    <h1>Abdulmujeeb T. Onawole, PhD</h1>
-    <p class="identity">AI for Science <span>|</span> Trust-Aware AI <span>|</span> Computational Chemistry</p>
-    <p>
-      I build AI models for chemistry and biology that also report when each of their predictions can be relied on.
+<main id="main">
+
+<header class="hero" id="top">
+  <div class="wrap profile">
+    <div class="profile-text">
+      <h1>Abdulmujeeb T. Onawole, PhD</h1>
+      <p class="identity">AI for Science <span>|</span> Trust-Aware AI <span>|</span> Computational Chemistry</p>
+      <p class="lead">I build AI models for chemistry and biology that also report when each of their predictions can be relied on.
       My work combines more than ten years of computational chemistry, from density functional theory to graph neural
       networks, with explainable AI. I completed my PhD in Chemistry at <strong>The University of Queensland</strong>
-      in 2026 and am based in Brisbane, Australia.
-    </p>
-    <p class="metrics">1,000+ citations &middot; h-index 20 &middot; 42+ publications &middot; 1 granted US patent &middot; 6 open web tools</p>
+      in 2026 and am based in Brisbane, Australia.</p>
+      <p class="hero-actions"><a class="button" href="#programme">Explore my research</a><a class="button secondary" href="#software">Try the web tools</a></p>
       <p class="contact-links">
         <a href="mailto:atonawole@gmail.com" title="Email" aria-label="Email">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 6 10 7 10-7"/></svg>
@@ -52,195 +67,241 @@
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
         </a>
       </p>
+    </div>
+    <img src="photo.jpg" alt="Abdulmujeeb Onawole" class="profile-photo">
   </div>
+  <div class="wrap"><p class="metrics">1,000+ citations &middot; h-index 20+ &middot; 40+ publications &middot; 1 granted US patent &middot; 6 open web tools</p></div>
 </header>
 
-<main>
+<section class="offer" aria-labelledby="offer-title">
+  <div class="wrap">
+    <h2 id="offer-title">What I offer</h2>
+    <ul>
+      <li><a href="#research"><h3>AI predictions you can check</h3><p>Models for molecules, materials, proteins and genomics that pair each prediction with a reliability check.</p><span class="more">See how it works</span></a></li>
+      <li><a href="#publications"><h3>Computational chemistry</h3><p>More than ten years of experience, from density functional theory and molecular dynamics to docking, virtual screening and graph neural networks.</p><span class="more">See the publications</span></a></li>
+      <li><a href="#software"><h3>Tools people can use</h3><p>Web apps that need no coding, supported by openly available code.</p><span class="more">Try the tools</span></a></li>
+    </ul>
+    <p class="offer-contact">Have a problem in this area? <a href="mailto:atonawole@gmail.com">Email me</a>.</p>
+  </div>
+</section>
 
-  <section id="research" class="statement">
-    <h2>When should we trust an AI prediction?</h2>
-    <p>
-      AI models can now predict whether a molecule will kill bacteria, how well a material will capture carbon dioxide,
-      or a person&rsquo;s genetic risk of disease. Even a good model is sometimes wrong, and its overall accuracy does not
-      tell you which predictions those are. That matters when each prediction decides the next step, such as which compound
-      a chemist makes, which material an engineer tests, or how a doctor reads a risk score.
-    </p>
-    <p>
-      My work gives every prediction its own trust label. Several models make the same prediction and each one explains
-      it by showing which parts of the molecule, material or DNA sequence drove the answer. When the models agree on both
-      the answer and the reason, the prediction is labelled trustworthy. When they disagree, it is flagged for a closer
-      look before anyone acts on it. In a study of carbon-capture materials, predictions labelled trustworthy were close to
-      the true value about 84 percent of the time, against about 8 percent for flagged ones.
-    </p>
-    <p>
-      Explainability is what makes this possible. It lets a scientist see why the model reached its answer, judge whether
-      that reason makes sense, and decide with confidence whether to move forward. The aim is AI that is safer and more
-      reliable to use for real decisions, in any field where a wrong prediction has a cost.
-    </p>
-  </section>
-
-  <section id="programme" class="programme">
-    <h2>Cross-domain research</h2>
-
-    <div class="core">
-      <span class="core-label">Shared method</span>
-      <p>Ensemble consensus <span class="plus">+</span> attribution agreement <span class="arrow">&rarr;</span> a per-prediction trust label, an explanation, and an open tool</p>
-    </div>
-
-    <div class="domain-grid">
-
-      <article class="domain">
-        <h3>Antimicrobial discovery</h3>
-        <p class="q">Which molecules will act against priority pathogens, and which fragments explain that activity?</p>
-        <ul>
-          <li>Activity models for <em>S. aureus</em>, <em>E. coli</em> and <em>C. albicans</em> at 88&ndash;95 percent precision, used to screen about one million compounds.</li>
-          <li>A four-tier test of whether model explanations are chemically valid.</li>
-          <li>Fragment-guided generative design that proposed 700 candidates, 40 percent predicted active.</li>
-          <li>The same pipeline extended to molecular taste (bitter, sweet, tasteless).</li>
-        </ul>
-        <div class="paper-links">
-          <a href="https://doi.org/10.1186/s13321-026-01200-x" target="_blank" rel="noopener">J. Cheminform. 2026</a>
-          <a href="https://doi.org/10.1021/acsinfecdis.6c00325" target="_blank" rel="noopener">ACS Infect. Dis. 2026</a>
-          <a href="https://doi.org/10.1016/j.insi.2026.100532" target="_blank" rel="noopener">Taste paper</a>
-          <a href="https://huggingface.co/spaces/catenate/antimicrobial-xai-predictor" target="_blank" rel="noopener">App</a>
+<section id="programme" class="work" aria-labelledby="work-title">
+  <div class="wrap">
+    <h2 id="work-title">Explore my AI research</h2>
+    <p class="section-intro">Choose a project to see how it works and what it found, then read the paper or try the tool.</p>
+    <nav class="work-tabs" aria-label="Research projects">
+      <a class="work-tab" id="tab-framework" href="#work-framework"><strong>XAI evaluation</strong><span>Antimicrobials</span></a>
+      <a class="work-tab" id="tab-fragment" href="#work-fragment"><strong>Antimicrobial fragments</strong><span>Antimicrobials</span></a>
+      <a class="work-tab" id="tab-poregcn" href="#work-poregcn"><strong>PoreGCN</strong><span>Carbon capture</span></a>
+      <a class="work-tab" id="tab-tmgnn" href="#work-tmgnn"><strong>tmGNN-XAI</strong><span>Metal complexes</span></a>
+      <a class="work-tab" id="tab-coordbind" href="#work-coordbind"><strong>CoordBind-XAI</strong><span>Metal binding</span></a>
+      <a class="work-tab" id="tab-taste" href="#work-taste"><strong>Taste-XAI</strong><span>Molecular taste</span></a>
+      <a class="work-tab" id="tab-prottrust" href="#work-prottrust"><strong>ProtTrust-XAI</strong><span>Proteins</span></a>
+      <a class="work-tab" id="tab-trustpgs" href="#work-trustpgs"><strong>TrustPGS</strong><span>Genetics</span></a>
+      <a class="work-tab" id="tab-regtrust" href="#work-regtrust"><strong>RegTrust-XAI</strong><span>Gene regulation</span></a>
+    </nav>
+    <div class="work-step" hidden><button type="button" data-step="-1">Previous project</button><span aria-live="polite"></span><button type="button" data-step="1">Next project</button></div>
+    <div class="work-panels">
+      <article class="work-panel" id="work-framework">
+        <figure>
+          <button type="button" class="zoom" aria-label="Enlarge the graphic for XAI evaluation"><img src="assets/work/framework.webp" alt="Overview graphic for XAI evaluation" width="997" height="982" loading="lazy"></button>
+          <figcaption>Overview of the study. Select the image to enlarge it.</figcaption>
+        </figure>
+        <div class="work-text">
+          <p class="work-venue">Journal of Cheminformatics, 2026</p>
+          <h3>How do you evaluate explainability?</h3>
+          <p>This foundation study sets out four tests. A key challenge is activity cliffs, where very similar molecules differ sharply in activity. We compared three approaches: a random forest using chemical features and functional groups, a CNN reading one-line molecular text (SMILES), and a relational graph network (RGCN) reading molecular graphs.</p>
+          <p class="work-result">On activity cliffs, RGCN agreed slightly better with experimental evidence than CNN. In one case, its explanation made better sense for an inactive molecule even though the model wrongly predicted it as active.</p>
+          <div class="work-actions">
+          <a class="button" href="https://huggingface.co/spaces/catenate/antimicrobial-xai-predictor" target="_blank" rel="noopener">Open web tool</a>
+          <a class="button secondary" href="https://doi.org/10.1186/s13321-026-01200-x" target="_blank" rel="noopener">Read the paper</a>
           <a href="https://github.com/MujeebOnawole/XAI_Evaluation_Framework_for_Drug_Discovery" target="_blank" rel="noopener">Code</a>
-          <a href="https://github.com/MujeebOnawole/-GenMol-XAI" target="_blank" rel="noopener">GenMol-XAI</a>
-          <a href="https://doi.org/10.14264/0d4317a" target="_blank" rel="noopener">PhD thesis</a>
+          </div>
         </div>
       </article>
-
-      <article class="domain">
-        <h3>Carbon capture and porous materials</h3>
-        <p class="q">Can a model of metal-organic frameworks tell us which of its gas-separation predictions to believe?</p>
-        <ul>
-          <li>PoreGCN adds Voronoi pore vertices to atomic graphs of 51,163 frameworks.</li>
-          <li>R&sup2; = 0.86 for CO&#x2082;/N&#x2082; selectivity, with atom- and pore-level explanations.</li>
-          <li>Trustworthy predictions 83.8 percent accurate at the 20 percent error threshold, against 8.3 percent for flagged cases.</li>
-        </ul>
-        <div class="paper-links">
-          <a href="https://doi.org/10.26434/chemrxiv.15004189/v1" target="_blank" rel="noopener">ChemRxiv 2026</a>
-          <a href="https://huggingface.co/spaces/catenate/PoreGCN" target="_blank" rel="noopener">App</a>
+            <article class="work-panel" id="work-fragment">
+        <figure>
+          <button type="button" class="zoom" aria-label="Enlarge the graphic for Antimicrobial fragments"><img src="assets/work/fragment.webp" alt="Graphical abstract for Antimicrobial fragments" width="1500" height="889" loading="lazy"></button>
+          <figcaption>Graphical abstract from the <a href="https://doi.org/10.1021/acsinfecdis.6c00325" target="_blank" rel="noopener">paper</a>, CC BY. Select the image to enlarge it.</figcaption>
+        </figure>
+        <div class="work-text">
+          <p class="work-venue">ACS Infectious Diseases, 2026</p>
+          <h3>Which parts of a molecule fight which microbe?</h3>
+          <p>Graph models for <em>S. aureus</em>, <em>E. coli</em> and <em>C. albicans</em> show which fragments raise or lower predicted activity against each one, giving chemists a guide for design.</p>
+          <p class="work-result">Learned from more than 120,000 compounds. In a separate screen of about 100,000, its selections found active compounds up to nearly 20 times more often than expected by chance.</p>
+          <div class="work-actions">
+          <a class="button" href="https://huggingface.co/spaces/catenate/antimicrobial-xai-predictor" target="_blank" rel="noopener">Open web tool</a>
+          <a class="button secondary" href="https://doi.org/10.1021/acsinfecdis.6c00325" target="_blank" rel="noopener">Read the paper</a>
+          <a href="https://github.com/MujeebOnawole/Antimicrobial_XAI_Fragment_Analysis" target="_blank" rel="noopener">Code</a>
+          </div>
+        </div>
+      </article>
+      <article class="work-panel" id="work-poregcn">
+        <figure>
+          <button type="button" class="zoom" aria-label="Enlarge the graphic for PoreGCN"><img src="assets/work/poregcn.webp" alt="Graphical abstract for PoreGCN" width="1463" height="572" loading="lazy"></button>
+          <figcaption>Graphical abstract from the <a href="https://doi.org/10.26434/chemrxiv.15004189/v1" target="_blank" rel="noopener">paper</a>, CC BY. Select the image to enlarge it.</figcaption>
+        </figure>
+        <div class="work-text">
+          <p class="work-venue">ChemRxiv preprint, 2026</p>
+          <h3>Which carbon capture predictions are worth acting on?</h3>
+          <p>PoreGCN shows a model both the atoms and the pores of metal-organic frameworks, then labels how far each prediction can be trusted.</p>
+          <p class="work-result">For separating carbon dioxide from nitrogen, more than 8 in 10 trustworthy test predictions were within 20 percent of the reference value. Fewer than 1 in 10 untrustworthy ones were.</p>
+          <div class="work-actions">
+          <a class="button" href="https://huggingface.co/spaces/catenate/PoreGCN" target="_blank" rel="noopener">Open web tool</a>
+          <a class="button secondary" href="https://doi.org/10.26434/chemrxiv.15004189/v1" target="_blank" rel="noopener">Read the paper</a>
           <a href="https://github.com/MujeebOnawole/PoreGCN" target="_blank" rel="noopener">Code</a>
+          </div>
         </div>
       </article>
-
-      <article class="domain">
-        <h3>Transition-metal chemistry</h3>
-        <p class="q">Can graph models learn metal chemistry from SMILES and show where each prediction comes from?</p>
-        <ul>
-          <li>tmGNN-XAI predicts seven quantum-chemical properties for 100,703 transition-metal complexes, with atom-level trust attribution.</li>
-          <li>CoordBind-XAI predicts metal&ndash;ligand binding strength and donor atoms across 61 metals from 19,964 stability constants.</li>
-          <li>Without being given these trends, CoordBind-XAI recovers the Irving&ndash;Williams series and the lanthanide contraction.</li>
-        </ul>
-        <div class="paper-links">
-          <a href="https://doi.org/10.1021/acs.jcim.6c01047" target="_blank" rel="noopener">J. Chem. Inf. Model. 2026</a>
-          <a href="https://huggingface.co/spaces/catenate/tmc-xai-predictor" target="_blank" rel="noopener">tmGNN-XAI app</a>
-          <a href="https://github.com/MujeebOnawole/tmGNN-XAI" target="_blank" rel="noopener">tmGNN-XAI code</a>
-          <a href="https://huggingface.co/spaces/catenate/metal-ligand-binding" target="_blank" rel="noopener">CoordBind-XAI app</a>
-          <a href="https://github.com/MujeebOnawole/CoordBind-XAI" target="_blank" rel="noopener">CoordBind-XAI code</a>
+      <article class="work-panel" id="work-tmgnn">
+        <figure>
+          <button type="button" class="zoom" aria-label="Enlarge the graphic for tmGNN-XAI"><img src="assets/work/tmgnn.webp" alt="Graphical abstract for tmGNN-XAI" width="1500" height="851" loading="lazy"></button>
+          <figcaption>Graphical abstract from the <a href="https://doi.org/10.1021/acs.jcim.6c01047" target="_blank" rel="noopener">paper</a>. Select the image to enlarge it.</figcaption>
+        </figure>
+        <div class="work-text">
+          <p class="work-venue">Journal of Chemical Information and Modeling, 2026</p>
+          <h3>Electronic properties of metal complexes from SMILES</h3>
+          <p>One model predicts seven electronic properties of transition-metal complexes, shows which atoms matter and gives a trust label. The app needs no programming or quantum chemistry expertise.</p>
+          <p class="work-result">Learned from about 100,000 metal complexes. On test examples, it explained about 95 percent of the variation in two important energy levels.</p>
+          <div class="work-actions">
+          <a class="button" href="https://huggingface.co/spaces/catenate/tmc-xai-predictor" target="_blank" rel="noopener">Open web tool</a>
+          <a class="button secondary" href="https://doi.org/10.1021/acs.jcim.6c01047" target="_blank" rel="noopener">Read the paper</a>
+          <a href="https://github.com/MujeebOnawole/tmGNN-XAI" target="_blank" rel="noopener">Code</a>
+          </div>
         </div>
       </article>
-
-      <article class="domain">
-        <h3>Genomics</h3>
-        <p class="q">When is a genetic score, or a model of gene regulation, reliable for the individual case in front of us?</p>
-        <ul>
-          <li>TrustPGS gives each person a reliability label for their polygenic score when models are transferred across ancestries.</li>
-          <li>RegTrust-XAI applies trust labels to sequence-to-function models in regulatory genomics.</li>
-        </ul>
-        <div class="paper-links">
-          <a href="https://doi.org/10.64898/2026.07.01.735762" target="_blank" rel="noopener">TrustPGS preprint</a>
-          <a href="https://github.com/MujeebOnawole/TrustPGS" target="_blank" rel="noopener">TrustPGS code</a>
-          <a href="https://doi.org/10.64898/2026.08.20.745945" target="_blank" rel="noopener">RegTrust preprint</a>
-          <a href="https://github.com/MujeebOnawole/RegTrust-XAI" target="_blank" rel="noopener">RegTrust code</a>
+      <article class="work-panel" id="work-coordbind">
+        <figure>
+          <button type="button" class="zoom" aria-label="Enlarge the graphic for CoordBind-XAI"><img src="assets/work/coordbind.webp" alt="Overview graphic for CoordBind-XAI" width="1475" height="858" loading="lazy"></button>
+          <figcaption>Overview of the study. Select the image to enlarge it.</figcaption>
+        </figure>
+        <div class="work-text">
+          <p class="work-venue">Molecular Informatics, 2026</p>
+          <h3>Which metal will a molecule grab, and how strongly?</h3>
+          <p>Enter a molecule as a line of text (called SMILES) and choose a metal. CoordBind-XAI predicts which atoms bind, how strong the binding is, which atoms drive the answer and how reliable it is. It needs no 3D structure.</p>
+          <p class="work-result">Learned from about 20,000 measured binding strengths across more than 60 metals. In tests on new types of molecule, it explained nearly 90 percent of the variation in binding strength.</p>
+          <div class="work-actions">
+          <a class="button" href="https://huggingface.co/spaces/catenate/metal-ligand-binding" target="_blank" rel="noopener">Open web tool</a>
+          <a class="button secondary" href="https://doi.org/10.1002/minf.70064" target="_blank" rel="noopener">Read the paper</a>
+          <a href="https://github.com/MujeebOnawole/CoordBind-XAI" target="_blank" rel="noopener">Code</a>
+          </div>
         </div>
       </article>
-
-      <article class="domain">
-        <h3>Proteins</h3>
-        <p class="q">Where does a protein property model stop being competent?</p>
-        <ul>
-          <li>ProtTrust-XAI maps the competence boundary of a protein property model, with plastic-degrading enzymes as a case study.</li>
-          <li>Residue-level explanations show which parts of the sequence drive each prediction.</li>
-        </ul>
-        <div class="paper-links">
-          <a href="https://doi.org/10.64898/2026.08.01.742252" target="_blank" rel="noopener">bioRxiv 2026</a>
-          <a href="https://huggingface.co/spaces/catenate/prottrust-xai" target="_blank" rel="noopener">App</a>
+      <article class="work-panel" id="work-taste">
+        <figure>
+          <button type="button" class="zoom" aria-label="Enlarge the graphic for Taste-XAI"><img src="assets/work/taste.webp" alt="Overview graphic for Taste-XAI" width="1500" height="847" loading="lazy"></button>
+          <figcaption>Overview of the study. Select the image to enlarge it.</figcaption>
+        </figure>
+        <div class="work-text">
+          <p class="work-venue">In Silico Research in Biomedicine, 2026</p>
+          <h3>Bitter, sweet or tasteless?</h3>
+          <p>Predicts the taste class of a molecule and checks whether the models and their explanation agree.</p>
+          <p class="work-result">In tests on molecules kept out of training, about 8 in 10 predictions were labelled high-trust. About 9 in 10 of those were correct.</p>
+          <div class="work-actions">
+          <a class="button" href="https://huggingface.co/spaces/catenate/taste-xai-predictor" target="_blank" rel="noopener">Open web tool</a>
+          <a class="button secondary" href="https://doi.org/10.1016/j.insi.2026.100532" target="_blank" rel="noopener">Read the paper</a>
+          <a href="https://github.com/MujeebOnawole/Taste_Prediction_RGCN" target="_blank" rel="noopener">Code</a>
+          </div>
+        </div>
+      </article>
+      <article class="work-panel" id="work-prottrust">
+        <figure>
+          <button type="button" class="zoom" aria-label="Enlarge the graphic for ProtTrust-XAI"><img src="assets/work/prottrust.webp" alt="Graphical abstract for ProtTrust-XAI: protein inputs, an ensemble of graph networks with explanations, a four-part trust framework and candidate thermostable proteins for plastic degradation" width="1500" height="681" loading="lazy"></button>
+          <figcaption>Graphical abstract. Select the image to enlarge it.</figcaption>
+        </figure>
+        <div class="work-text">
+          <p class="work-venue">bioRxiv preprint, 2026</p>
+          <h3>Where does a protein model stop being reliable?</h3>
+          <p>Labels predictions of protein melting temperature and tracks how far each protein is from the training data. Plastic-degrading enzymes provide a case study, where absolute predictions break down but ranking survives.</p>
+          <p class="work-result">On protein families not seen in training, predicted melting temperatures were off by about 4&deg;C on average. For the most trusted predictions, this fell to about 3&deg;C.</p>
+          <div class="work-actions">
+          <a class="button" href="https://huggingface.co/spaces/catenate/prottrust-xai" target="_blank" rel="noopener">Open web tool</a>
+          <a class="button secondary" href="https://doi.org/10.64898/2026.08.01.742252" target="_blank" rel="noopener">Read the paper</a>
           <a href="https://github.com/MujeebOnawole/ProtTrust-XAI" target="_blank" rel="noopener">Code</a>
+          </div>
         </div>
       </article>
-
+      <article class="work-panel" id="work-trustpgs">
+        <figure>
+          <button type="button" class="zoom" aria-label="Enlarge the graphic for TrustPGS"><img src="assets/work/trustpgs.webp" alt="Graphical abstract for TrustPGS: ancestry bias raises doubt for diverse populations, and TrustPGS separates genetic scores that transfer from unreliable ones" width="1500" height="529" loading="lazy"></button>
+          <figcaption>Graphical abstract. Select the image to enlarge it.</figcaption>
+        </figure>
+        <div class="work-text">
+          <p class="work-venue">bioRxiv preprint, 2026</p>
+          <h3>Can this person&rsquo;s genetic risk score be trusted?</h3>
+          <p>An overall accuracy figure cannot say whether one person&rsquo;s genetic risk score is reliable. TrustPGS gives each person a trust label and tests how well the labels carry across ancestries.</p>
+          <p class="work-result">After a simple adjustment, the trust labels remained useful in non-European populations for 5 of 10 traits, but not for all.</p>
+          <div class="work-actions">
+          <a class="button secondary" href="https://doi.org/10.64898/2026.07.01.735762" target="_blank" rel="noopener">Read the paper</a>
+          <a href="https://github.com/MujeebOnawole/TrustPGS" target="_blank" rel="noopener">Code</a>
+          </div>
+        </div>
+      </article>
+      <article class="work-panel" id="work-regtrust">
+        <figure>
+          <button type="button" class="zoom" aria-label="Enlarge the graphic for RegTrust-XAI"><img src="assets/work/regtrust.webp" alt="Illustration of three reliability checks: stability, biological coherence and model familiarity" width="1500" height="844" loading="lazy"></button>
+          <figcaption>Illustration of the three reliability checks. Select the image to enlarge it.</figcaption>
+        </figure>
+        <div class="work-text">
+          <p class="work-venue">bioRxiv preprint, 2026</p>
+          <h3>When can a DNA sequence model be relied on?</h3>
+          <p>Predicts how accessible a stretch of DNA is, then checks model agreement, whether known DNA motifs support the explanation, and how unfamiliar the sequence is.</p>
+          <p class="work-result">When the models agreed in tests, predictions supported by known DNA patterns had roughly 10 percent less error.</p>
+          <div class="work-actions">
+          <a class="button secondary" href="https://doi.org/10.64898/2026.08.20.745945" target="_blank" rel="noopener">Read the paper</a>
+          <a href="https://github.com/MujeebOnawole/RegTrust-XAI" target="_blank" rel="noopener">Code</a>
+          </div>
+        </div>
+      </article>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section id="software" class="software">
-    <h2>Open software and web tools</h2>
-    <p class="section-intro">Each tool returns a prediction, an explanation and a trust label. No coding is needed to use the apps.</p>
-    <details class="tools-toggle">
-      <summary>Show all tools and links</summary>
-    <table class="tools">
-      <thead><tr><th>Tool</th><th>What it predicts</th><th>Links</th></tr></thead>
-      <tbody>
-        <tr><td>Antimicrobial XAI Predictor</td><td>Activity against <em>S. aureus</em>, <em>E. coli</em> and <em>C. albicans</em></td>
-          <td><a href="https://huggingface.co/spaces/catenate/antimicrobial-xai-predictor" target="_blank" rel="noopener">App</a> <a href="https://github.com/MujeebOnawole/Antimicrobial_XAI" target="_blank" rel="noopener">Code</a></td></tr>
-        <tr><td>Taste-XAI</td><td>Bitter, sweet or tasteless</td>
-          <td><a href="https://huggingface.co/spaces/catenate/taste-xai-predictor" target="_blank" rel="noopener">App</a> <a href="https://github.com/MujeebOnawole/Taste_Prediction_RGCN" target="_blank" rel="noopener">Code</a></td></tr>
-        <tr><td>PoreGCN</td><td>Gas adsorption and CO&#x2082;/N&#x2082; selectivity of metal-organic frameworks</td>
-          <td><a href="https://huggingface.co/spaces/catenate/PoreGCN" target="_blank" rel="noopener">App</a> <a href="https://github.com/MujeebOnawole/PoreGCN" target="_blank" rel="noopener">Code</a></td></tr>
-        <tr><td>tmGNN-XAI</td><td>Electronic properties of transition-metal complexes</td>
-          <td><a href="https://huggingface.co/spaces/catenate/tmc-xai-predictor" target="_blank" rel="noopener">App</a> <a href="https://github.com/MujeebOnawole/tmGNN-XAI" target="_blank" rel="noopener">Code</a></td></tr>
-        <tr><td>CoordBind-XAI</td><td>Metal&ndash;ligand binding strength and donor atoms</td>
-          <td><a href="https://huggingface.co/spaces/catenate/metal-ligand-binding" target="_blank" rel="noopener">App</a> <a href="https://github.com/MujeebOnawole/CoordBind-XAI" target="_blank" rel="noopener">Code</a></td></tr>
-        <tr><td>ProtTrust-XAI</td><td>Protein properties, with a competence boundary</td>
-          <td><a href="https://huggingface.co/spaces/catenate/prottrust-xai" target="_blank" rel="noopener">App</a> <a href="https://github.com/MujeebOnawole/ProtTrust-XAI" target="_blank" rel="noopener">Code</a></td></tr>
-        <tr><td>TrustPGS</td><td>Per-individual reliability of polygenic scores</td>
-          <td><a href="https://github.com/MujeebOnawole/TrustPGS" target="_blank" rel="noopener">Code</a></td></tr>
-        <tr><td>RegTrust-XAI</td><td>Trust-aware regulatory genomics models</td>
-          <td><a href="https://github.com/MujeebOnawole/RegTrust-XAI" target="_blank" rel="noopener">Code</a></td></tr>
-      </tbody>
-    </table>
-    </details>
-    <p class="section-intro">Apps are hosted on Hugging Face and may take a minute to wake up. All code is on <a href="https://github.com/MujeebOnawole" target="_blank" rel="noopener">GitHub</a>.</p>
-  </section>
+<dialog id="toolbox" aria-labelledby="toolbox-title"><form method="dialog"><button class="close" aria-label="Close">Close</button></form><div class="toolbox-body"></div></dialog>
 
-  <section id="publications" class="publications">
+<dialog id="lightbox" aria-label="Enlarged graphic"><form method="dialog"><button class="button">Close</button></form><img alt=""></dialog>
+
+<section id="software" class="software">
+  <div class="wrap">
+    <h2>Open web tools</h2>
+    <p class="section-intro">Each app returns a prediction, an explanation and a trust label, with no coding needed. Apps are hosted on Hugging Face and may take a minute to wake up.</p>
+    <ul class="tool-grid">
+      <li><h3>Antimicrobial XAI Predictor</h3><p>Activity against <em>S. aureus</em>, <em>E. coli</em> and <em>C. albicans</em></p><div><a class="button" href="https://huggingface.co/spaces/catenate/antimicrobial-xai-predictor" target="_blank" rel="noopener">Open app</a><a href="https://github.com/MujeebOnawole/Antimicrobial_XAI" target="_blank" rel="noopener">Code</a></div></li>
+      <li><h3>Taste-XAI</h3><p>Bitter, sweet or tasteless</p><div><a class="button" href="https://huggingface.co/spaces/catenate/taste-xai-predictor" target="_blank" rel="noopener">Open app</a><a href="https://github.com/MujeebOnawole/Taste_Prediction_RGCN" target="_blank" rel="noopener">Code</a></div></li>
+      <li><h3>PoreGCN</h3><p>Gas adsorption and CO&#x2082;/N&#x2082; selectivity of metal-organic frameworks</p><div><a class="button" href="https://huggingface.co/spaces/catenate/PoreGCN" target="_blank" rel="noopener">Open app</a><a href="https://github.com/MujeebOnawole/PoreGCN" target="_blank" rel="noopener">Code</a></div></li>
+      <li><h3>tmGNN-XAI</h3><p>Electronic properties of transition-metal complexes</p><div><a class="button" href="https://huggingface.co/spaces/catenate/tmc-xai-predictor" target="_blank" rel="noopener">Open app</a><a href="https://github.com/MujeebOnawole/tmGNN-XAI" target="_blank" rel="noopener">Code</a></div></li>
+      <li><h3>CoordBind-XAI</h3><p>Metal&ndash;ligand binding strength and donor atoms</p><div><a class="button" href="https://huggingface.co/spaces/catenate/metal-ligand-binding" target="_blank" rel="noopener">Open app</a><a href="https://github.com/MujeebOnawole/CoordBind-XAI" target="_blank" rel="noopener">Code</a></div></li>
+      <li><h3>ProtTrust-XAI</h3><p>Protein properties, with a competence boundary</p><div><a class="button" href="https://huggingface.co/spaces/catenate/prottrust-xai" target="_blank" rel="noopener">Open app</a><a href="https://github.com/MujeebOnawole/ProtTrust-XAI" target="_blank" rel="noopener">Code</a></div></li>
+    </ul>
+    <h3>Also available as code</h3>
+    <ul class="code-only">
+      <li><strong>TrustPGS.</strong> Per-individual reliability of polygenic scores. <a href="https://github.com/MujeebOnawole/TrustPGS" target="_blank" rel="noopener">Code</a></li>
+      <li><strong>RegTrust-XAI.</strong> Trust-aware regulatory genomics models. <a href="https://github.com/MujeebOnawole/RegTrust-XAI" target="_blank" rel="noopener">Code</a></li>
+    </ul>
+    <p class="section-intro">All code is on <a href="https://github.com/MujeebOnawole" target="_blank" rel="noopener">GitHub</a>.</p>
+  </div>
+</section>
+
+<section id="publications" class="publications">
+  <div class="wrap">
     <h2>Publications</h2>
 
-    <h3 class="group-title">Selected 2026 papers</h3>
-    <div class="featured">
-      <article class="paper featured-paper">
-        <h4>Framework for evaluating explainable AI in antimicrobial drug discovery</h4>
-        <p class="venue">Journal of Cheminformatics, 2026. The trust framework.</p>
-        <div class="paper-links"><a href="https://doi.org/10.1186/s13321-026-01200-x" target="_blank" rel="noopener">Paper</a><a href="https://github.com/MujeebOnawole/XAI_Evaluation_Framework_for_Drug_Discovery" target="_blank" rel="noopener">Code</a></div>
-      </article>
-      <article class="paper featured-paper">
-        <h4>tmGNN-XAI: electronic properties of transition-metal complexes from SMILES</h4>
-        <p class="venue">Journal of Chemical Information and Modeling, 2026. Sole author.</p>
-        <div class="paper-links"><a href="https://doi.org/10.1021/acs.jcim.6c01047" target="_blank" rel="noopener">Paper</a><a href="https://github.com/MujeebOnawole/tmGNN-XAI" target="_blank" rel="noopener">Code</a><a href="https://huggingface.co/spaces/catenate/tmc-xai-predictor" target="_blank" rel="noopener">App</a></div>
-      </article>
-      <article class="paper featured-paper">
-        <h4>Fragment-based explainable AI for pathogen-selective antimicrobial drug design</h4>
-        <p class="venue">ACS Infectious Diseases, 2026.</p>
-        <div class="paper-links"><a href="https://doi.org/10.1021/acsinfecdis.6c00325" target="_blank" rel="noopener">Paper</a><a href="https://github.com/MujeebOnawole/Antimicrobial_XAI_Fragment_Analysis" target="_blank" rel="noopener">Code</a></div>
-      </article>
-      <article class="paper featured-paper">
-        <h4>Towards explainable molecular taste prediction using graph neural networks</h4>
-        <p class="venue">In Silico Research in Biomedicine, 2026.</p>
-        <div class="paper-links"><a href="https://doi.org/10.1016/j.insi.2026.100532" target="_blank" rel="noopener">Paper</a><a href="https://github.com/MujeebOnawole/Taste_Prediction_RGCN" target="_blank" rel="noopener">Code</a><a href="https://huggingface.co/spaces/catenate/taste-xai-predictor" target="_blank" rel="noopener">App</a></div>
-      </article>
+    <h3 class="group-title" id="full-list">Full list</h3>
+    <div class="finder">
+      <label for="pub-search">Search by title, author, journal or year</label>
+      <input type="search" id="pub-search" autocomplete="off" placeholder="For example, antimicrobial">
     </div>
-
-    <h3 class="group-title">Full list</h3>
-    <div class="topic-filters">
-      <span class="topic-label">TOPIC:</span>
-      <button class="topic-pill active" data-topic="all">All</button>
-      <button class="topic-pill" data-topic="trust">Trust-aware AI</button>
-      <button class="topic-pill" data-topic="drug">Drug &amp; molecular discovery</button>
-      <button class="topic-pill" data-topic="materials">Materials &amp; energy</button>
-      <button class="topic-pill" data-topic="metal">Metal chemistry</button>
-      <button class="topic-pill" data-topic="bio">Genomics &amp; proteins</button>
-      <button class="topic-pill" data-topic="oilfield">Oilfield chemistry</button>
+    <div class="topic-filters" role="group" aria-label="Filter by topic">
+      <button type="button" class="topic-pill active" data-topic="all" aria-pressed="true">All</button>
+      <button type="button" class="topic-pill" data-topic="trust" aria-pressed="false">Trust-aware AI</button>
+      <button type="button" class="topic-pill" data-topic="drug" aria-pressed="false">Drug &amp; molecular discovery</button>
+      <button type="button" class="topic-pill" data-topic="materials" aria-pressed="false">Materials &amp; energy</button>
+      <button type="button" class="topic-pill" data-topic="metal" aria-pressed="false">Metal chemistry</button>
+      <button type="button" class="topic-pill" data-topic="protein" aria-pressed="false">Proteins</button>
+      <button type="button" class="topic-pill" data-topic="genomics" aria-pressed="false">Genomics</button>
+      <button type="button" class="topic-pill" data-topic="oilfield" aria-pressed="false">Oilfield chemistry</button>
     </div>
+    <p id="pub-count" class="pub-count" aria-live="polite"></p>
 
     <div class="pub-group">
     <h3 class="group-title">Patent</h3>
@@ -252,32 +313,26 @@
     </article>
     </div>
     <div class="pub-group">
-    <h3 class="group-title">Preprints and manuscripts under review</h3>
-    <article class="paper" data-topics="trust metal">
-      <h4>CoordBind-XAI: Predicting Metal&ndash;Ligand Binding Strength and Coordination Sites from SMILES</h4>
-      <p class="authors"><strong>Onawole, A. T.</strong>, Sulaiman, K. O., Alli, Y. A., Aderinto, S. O., Anumah, A. O.</p>
-      <p class="venue">Under review, Molecular Informatics, 2026 <span class="badge">First &amp; corresponding author</span></p>
-      <div class="paper-links"><a href="https://github.com/MujeebOnawole/CoordBind-XAI" target="_blank" rel="noopener">Code</a><a href="https://huggingface.co/spaces/catenate/metal-ligand-binding" target="_blank" rel="noopener">App</a></div>
-    </article>
+    <h3 class="group-title">Preprints</h3>
     <article class="paper" data-topics="trust materials">
       <h4>Are Atoms Enough? An Explainable Graph Neural Network for Carbon Capture and Gas Separation in Metal-Organic Frameworks</h4>
       <p class="authors"><strong>Onawole, A. T.</strong></p>
       <p class="venue">ChemRxiv preprint, 2026 <span class="badge">Sole author</span></p>
       <div class="paper-links"><a href="https://doi.org/10.26434/chemrxiv.15004189/v1" target="_blank" rel="noopener">Preprint</a><a href="https://github.com/MujeebOnawole/PoreGCN" target="_blank" rel="noopener">Code</a><a href="https://huggingface.co/spaces/catenate/PoreGCN" target="_blank" rel="noopener">App</a></div>
     </article>
-    <article class="paper" data-topics="trust bio">
+    <article class="paper" data-topics="trust genomics">
       <h4>TrustPGS: When can a polygenic score be trusted? A per-individual reliability framework across ancestries</h4>
       <p class="authors"><strong>Onawole, A. T.</strong>, Adegoke, R. A., Amoo, O.</p>
       <p class="venue">bioRxiv preprint, 2026</p>
       <div class="paper-links"><a href="https://doi.org/10.64898/2026.07.01.735762" target="_blank" rel="noopener">Preprint</a><a href="https://github.com/MujeebOnawole/TrustPGS" target="_blank" rel="noopener">Code</a></div>
     </article>
-    <article class="paper" data-topics="trust bio">
+    <article class="paper" data-topics="trust protein">
       <h4>Mapping the Competence Boundary of a Protein Property Model: A Case Study on Plastic-Degrading Enzymes using ProtTrust-XAI</h4>
       <p class="authors"><strong>Onawole, A. T.</strong>, Adegoke, R. A.</p>
       <p class="venue">bioRxiv preprint, 2026 <span class="badge">First &amp; corresponding author</span></p>
       <div class="paper-links"><a href="https://doi.org/10.64898/2026.08.01.742252" target="_blank" rel="noopener">Preprint</a><a href="https://github.com/MujeebOnawole/ProtTrust-XAI" target="_blank" rel="noopener">Code</a><a href="https://huggingface.co/spaces/catenate/prottrust-xai" target="_blank" rel="noopener">App</a></div>
     </article>
-    <article class="paper" data-topics="trust bio">
+    <article class="paper" data-topics="trust genomics">
       <h4>Trust-Aware Sequence-to-Function Modelling in Regulatory Genomics</h4>
       <p class="authors"><strong>Onawole, A. T.</strong>, Basiru, S., Sanni, M. O., Aiyedun, M., Sulaimon, R.</p>
       <p class="venue">bioRxiv preprint, 2026 <span class="badge">First &amp; corresponding author</span></p>
@@ -286,6 +341,12 @@
     </div>
     <div class="pub-group">
     <h3 class="group-title">Journal articles</h3>
+    <article class="paper" data-topics="trust metal">
+      <h4>CoordBind-XAI: Predicting Metal&ndash;Ligand Binding Strength and Coordination Sites From SMILES</h4>
+      <p class="authors"><strong>Onawole, A. T.</strong>, Sulaiman, K. O., Alli, Y. A., Aderinto, S. O., Anumah, A. O.</p>
+      <p class="venue">Molecular Informatics, 45, e70064, 2026 <span class="badge">Q2 &middot; Open access &middot; First &amp; corresponding author</span></p>
+      <div class="paper-links"><a href="https://doi.org/10.1002/minf.70064" target="_blank" rel="noopener">Paper</a><a href="https://github.com/MujeebOnawole/CoordBind-XAI" target="_blank" rel="noopener">Code</a><a href="https://huggingface.co/spaces/catenate/metal-ligand-binding" target="_blank" rel="noopener">App</a></div>
+    </article>
     <article class="paper" data-topics="trust drug">
       <h4>Fragment-Based Explainable AI for Pathogen-Selective Antimicrobial Drug Design</h4>
       <p class="authors"><strong>Onawole, A. T.</strong>, Blaskovich, M. A. T., Zuegg, J.</p>
@@ -319,7 +380,7 @@
     <article class="paper" data-topics="drug">
       <h4>Organoselenium compounds as an enriched source for the discovery of new antimicrobial agents</h4>
       <p class="authors">Friberg, L. I. M., Kavanagh, A., Amado, M., &hellip;, <strong>Onawole, A.</strong>, et al.</p>
-      <p class="venue">RSC Medicinal Chemistry, 16(11), 3213&ndash;3228, 2025 <span class="badge">Q2</span></p>
+      <p class="venue">RSC Medicinal Chemistry, 16(7), 3213&ndash;3228, 2025 <span class="badge">Q2</span></p>
       <div class="paper-links"><a href="https://doi.org/10.1039/D4MD00677A" target="_blank" rel="noopener">Paper</a></div>
     </article>
     <article class="paper" data-topics="drug metal">
@@ -373,7 +434,7 @@
     <article class="paper" data-topics="materials oilfield">
       <h4>Theoretical studies of methane adsorption on silica-kaolinite interface for shale reservoir application</h4>
       <p class="authors"><strong>Onawole, A. T.</strong>, Nasser, M. S., Hussein, I. A., Al-Marri, M. J., Aparicio, S.</p>
-      <p class="venue">Applied Surface Science, 549, 149164, 2021 <span class="badge">Q1</span></p>
+      <p class="venue">Applied Surface Science, 546, 149164, 2021 <span class="badge">Q1</span></p>
       <div class="paper-links"><a href="https://doi.org/10.1016/j.apsusc.2021.149164" target="_blank" rel="noopener">Paper</a></div>
     </article>
     <article class="paper" data-topics="oilfield">
@@ -583,14 +644,59 @@
     </article>
     </div>
 
+
     <p class="full-list-note">
       For citation counts, see
       <a href="https://scholar.google.com/citations?user=P-1Xo6IAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
       or the full <a href="cv.pdf" target="_blank">CV</a>.
     </p>
-  </section>
+  </div>
+</section>
 
-  <section class="background">
+  <section id="research" class="statement">
+  <div class="wrap">
+    <h2>When should we trust an AI prediction?</h2>
+    <div class="story">
+      <p>AI models can now predict whether a molecule will kill bacteria, how well a material will capture carbon dioxide,
+      or a person&rsquo;s genetic risk of disease. Even a good model is sometimes wrong, and its overall accuracy does not
+      tell you which predictions those are. That matters when each prediction decides the next step, such as which compound
+      a chemist makes, which material an engineer tests, or how a doctor reads a risk score.</p>
+    </div>
+    <div class="story">
+      <p>My work gives every prediction its own trust label. Several models make the same prediction and each one explains
+      it by showing which parts of the molecule, material or DNA sequence drove the answer. When the models agree on both
+      the answer and the reason, the prediction is labelled trustworthy. When they disagree, it is flagged for a closer
+      look before anyone acts on it. In a study of carbon-capture materials, more than 8 in 10 predictions labelled trustworthy were close to the reference value, compared with fewer than 1 in 10 of the flagged ones.</p>
+    </div>
+    <div class="demo" aria-labelledby="demo-title">
+      <h3 id="demo-title">Try it: which trust label would a prediction get?</h3>
+      <div class="demo-body">
+        <div class="demo-questions">
+          <fieldset><legend>Do the models agree on the answer?</legend>
+            <label><input type="radio" name="consensus" value="yes" checked><span>Yes</span></label>
+            <label><input type="radio" name="consensus" value="no"><span>No</span></label>
+          </fieldset>
+          <fieldset><legend>Does the explanation hold up?</legend>
+            <label><input type="radio" name="reason" value="yes" checked><span>Yes</span></label>
+            <label><input type="radio" name="reason" value="no"><span>No</span></label>
+          </fieldset>
+        </div>
+        <div class="demo-result" data-scenario="A" aria-live="polite">
+          <p class="demo-letter">A</p>
+          <div><p class="demo-name">Trustworthy</p><p class="demo-text">The answer and the reason both pass. This is the first candidate to act on.</p></div>
+        </div>
+      </div>
+      <p class="demo-note">A simplified view. Each paper defines its own checks and thresholds.</p>
+    </div>
+    <div class="story">
+      <p>Explainability is what makes this possible. It lets a scientist see why the model reached its answer, judge whether
+      that reason makes sense, and decide with confidence whether to move forward. The aim is AI that is safer and more
+      reliable to use for real decisions, in any field where a wrong prediction has a cost.</p>
+    </div>
+  </div>
+</section>
+
+<section class="background"><div class="wrap">
     <h2>Background</h2>
     <ul>
       <li><strong>PhD, Chemistry</strong>, The University of Queensland, conferred 2026. Institute for Molecular Bioscience, 2022&ndash;present.</li>
@@ -598,7 +704,7 @@
       <li><strong>M.Sc., Chemistry</strong>, King Fahd University of Petroleum and Minerals, 2014&ndash;2017.</li>
       <li><strong>B.Tech., Pure and Applied Chemistry</strong>, Ladoke Akintola University of Technology, 2006&ndash;2011.</li>
     </ul>
-  </section>
+  </div></section>
 
 </main>
 
@@ -606,6 +712,7 @@
   Abdulmujeeb T. Onawole &middot; Brisbane, Australia
 </footer>
 
-<script src="script.js"></script>
+<script src="script.js?v=7"></script>
+<button type="button" id="to-top" hidden>Back to top</button>
 </body>
 </html>
