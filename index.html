@@ -144,9 +144,10 @@
         </figure>
         <div class="work-text">
           <p class="work-venue">ChemRxiv preprint, 2026</p>
-          <h3>Which carbon capture predictions are worth acting on?</h3>
-          <p>PoreGCN shows a model both the atoms and the pores of metal-organic frameworks, then labels how far each prediction can be trusted.</p>
-          <p class="work-result">For separating carbon dioxide from nitrogen, more than 8 in 10 trustworthy test predictions were within 20 percent of the reference value. Fewer than 1 in 10 untrustworthy ones were.</p>
+          <h3>Atoms are only half the story</h3>
+          <p>In porous materials, the action happens in the empty space. PoreGCN puts the pores into the model, alongside the atoms. <strong>Representation matters.</strong></p>
+          <p class="work-result"><strong>Take the pores out and performance drops:</strong> for the narrowest passage, variation explained falls from 75% to 15%. For empty space, from 85% to 30%.</p>
+          <p class="work-result"><strong>Know what to act on:</strong> for CO<sub>2</sub>/N<sub>2</sub> separation in computer-generated frameworks, over 80% of trustworthy predictions were within 20% of the reference value, against under 10% of untrustworthy ones.</p>
           <div class="work-actions">
           <a class="button" href="https://huggingface.co/spaces/catenate/PoreGCN" target="_blank" rel="noopener">Open web tool</a>
           <a class="button secondary" href="https://doi.org/10.26434/chemrxiv.15004189/v1" target="_blank" rel="noopener">Read the paper</a>
@@ -163,7 +164,7 @@
           <p class="work-venue">Journal of Chemical Information and Modeling, 2026</p>
           <h3>Electronic properties of metal complexes from SMILES</h3>
           <p>One model predicts seven electronic properties of transition-metal complexes, shows which atoms matter and gives a trust label. The app needs no programming or quantum chemistry expertise.</p>
-          <p class="work-result">Learned from about 100,000 metal complexes. On test examples, it explained about 95 percent of the variation in two important energy levels.</p>
+          <p class="work-result">Learned from about 100,000 metal complexes. On test examples, it explained about 95% of the variation in two important energy levels.</p>
           <div class="work-actions">
           <a class="button" href="https://huggingface.co/spaces/catenate/tmc-xai-predictor" target="_blank" rel="noopener">Open web tool</a>
           <a class="button secondary" href="https://doi.org/10.1021/acs.jcim.6c01047" target="_blank" rel="noopener">Read the paper</a>
@@ -180,7 +181,7 @@
           <p class="work-venue">Molecular Informatics, 2026</p>
           <h3>Which metal will a molecule grab, and how strongly?</h3>
           <p>Enter a molecule as a line of text (called SMILES) and choose a metal. CoordBind-XAI predicts which atoms bind, how strong the binding is, which atoms drive the answer and how reliable it is. It needs no 3D structure.</p>
-          <p class="work-result">Learned from about 20,000 measured binding strengths across more than 60 metals. In tests on new types of molecule, it explained nearly 90 percent of the variation in binding strength.</p>
+          <p class="work-result">Learned from about 20,000 measured binding strengths across more than 60 metals. In tests on new types of molecule, it explained nearly 90% of the variation in binding strength.</p>
           <div class="work-actions">
           <a class="button" href="https://huggingface.co/spaces/catenate/metal-ligand-binding" target="_blank" rel="noopener">Open web tool</a>
           <a class="button secondary" href="https://doi.org/10.1002/minf.70064" target="_blank" rel="noopener">Read the paper</a>
@@ -195,9 +196,10 @@
         </figure>
         <div class="work-text">
           <p class="work-venue">In Silico Research in Biomedicine, 2026</p>
-          <h3>Bitter, sweet or tasteless?</h3>
-          <p>Predicts the taste class of a molecule and checks whether the models and their explanation agree.</p>
-          <p class="work-result">In tests on molecules kept out of training, about 8 in 10 predictions were labelled high-trust. About 9 in 10 of those were correct.</p>
+          <h3>Could AI help make bitter medicines easier to swallow?</h3>
+          <p>Taste-XAI predicts whether a molecule is bitter, sweet or tasteless, and shows <strong>which parts drive that taste</strong>. This could help the search for sweet molecules to mask bitter drugs, or guide changes that reduce bitterness.</p>
+          <p class="work-result"><strong>The right reasons:</strong> to guard against Clever Hans shortcuts, explanations can be checked against chemistry. They picked out known patterns, such as sugar-like rings for sweetness.</p>
+          <p class="work-result"><strong>Know what to act on:</strong> about 80% of test predictions were high-trust, and about 90% of those were correct.</p>
           <div class="work-actions">
           <a class="button" href="https://huggingface.co/spaces/catenate/taste-xai-predictor" target="_blank" rel="noopener">Open web tool</a>
           <a class="button secondary" href="https://doi.org/10.1016/j.insi.2026.100532" target="_blank" rel="noopener">Read the paper</a>
@@ -212,9 +214,10 @@
         </figure>
         <div class="work-text">
           <p class="work-venue">bioRxiv preprint, 2026</p>
-          <h3>Where does a protein model stop being reliable?</h3>
-          <p>Labels predictions of protein melting temperature and tracks how far each protein is from the training data. Plastic-degrading enzymes provide a case study, where absolute predictions break down but ranking survives.</p>
-          <p class="work-result">On protein families not seen in training, predicted melting temperatures were off by about 4&deg;C on average. For the most trusted predictions, this fell to about 3&deg;C.</p>
+          <h3>Explainable AI showed us how to build a better protein model</h3>
+          <p>An accuracy score will not tell you what a model is missing. For our model of protein melting temperature, a trust framework combining model agreement and explainable AI helped us find out.</p>
+          <p class="work-result"><strong>The discovery:</strong> proteins with electron-transferring cofactors, such as haem and flavin, were far harder to trust. The model never sees these cofactors, a likely reason why.</p>
+          <p class="work-result"><strong>The lesson:</strong> building a better protein model? <strong>Bring in the cofactors.</strong></p>
           <div class="work-actions">
           <a class="button" href="https://huggingface.co/spaces/catenate/prottrust-xai" target="_blank" rel="noopener">Open web tool</a>
           <a class="button secondary" href="https://doi.org/10.64898/2026.08.01.742252" target="_blank" rel="noopener">Read the paper</a>
@@ -247,7 +250,7 @@
           <p class="work-venue">bioRxiv preprint, 2026</p>
           <h3>When can a DNA sequence model be relied on?</h3>
           <p>Predicts how accessible a stretch of DNA is, then checks model agreement, whether known DNA motifs support the explanation, and how unfamiliar the sequence is.</p>
-          <p class="work-result">When the models agreed in tests, predictions supported by known DNA patterns had roughly 10 percent less error.</p>
+          <p class="work-result">When the models agreed in tests, predictions supported by known DNA patterns had roughly 10% less error.</p>
           <div class="work-actions">
           <a class="button secondary" href="https://doi.org/10.64898/2026.08.20.745945" target="_blank" rel="noopener">Read the paper</a>
           <a href="https://github.com/MujeebOnawole/RegTrust-XAI" target="_blank" rel="noopener">Code</a>
