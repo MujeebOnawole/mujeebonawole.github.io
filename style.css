@@ -328,3 +328,18 @@ dialog[open] { animation: panel-in .22s cubic-bezier(.2,.8,.2,1); }
   .work-step { justify-content: space-between; gap: 6px; font-size: .9rem; }
 }
 @media (prefers-reduced-motion: reduce) { .offer li a, .tool-grid li, .work-tab, dialog[open] { transition: none; animation: none; } }
+
+/* ===== In the media ===== */
+main .media { background: linear-gradient(180deg, #e9e4fa, #e7e9f4); }
+.media ul { list-style: none; padding: 0; margin: 0; }
+.media-feature { margin-bottom: 22px !important; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+.media li a { display: flex; flex-direction: column; gap: 6px; height: 100%; padding: 18px 20px; background: #fff; border: 1px solid #d3d6e8; border-radius: 12px; color: var(--text); text-decoration: none; box-shadow: 0 6px 18px rgb(23 26 51 / .07); transition: transform .22s cubic-bezier(.2,.8,.2,1), box-shadow .22s; }
+.media li a:hover { transform: translateY(-4px); box-shadow: 0 16px 32px rgb(23 26 51 / .14); color: var(--navy); }
+.media .outlet { font-weight: 700; color: var(--blue); font-size: .95rem; }
+.media-feature a { background: var(--navy) !important; color: #fff !important; border-color: var(--navy) !important; }
+.media-feature .outlet, .media-feature .more { color: #c9bbf5; }
+.media-feature strong { font: 600 1.3rem/1.3 "Lora", Georgia, serif; }
+.media-feature .more { margin-top: auto; padding-top: 8px; font-weight: 700; font-size: .95rem; }
+.media-note { margin: 0 0 8px; }
+@media (max-width: 800px) { .media-feature { grid-template-columns: 1fr; } }
+@media (prefers-reduced-motion: reduce) { .media li a { transition: none; } }

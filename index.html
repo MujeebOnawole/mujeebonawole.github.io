@@ -13,7 +13,7 @@
 <meta property="og:image" content="https://mujeebonawole.github.io/photo.jpg">
 <meta name="twitter:card" content="summary">
 <link rel="preload" href="assets/fonts/lora-600.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="style.css?v=8">
+<link rel="stylesheet" href="style.css?v=12">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -26,6 +26,7 @@
       <a href="#programme">Research</a>
       <a href="#software">Web tools</a>
       <a href="#publications">Publications</a>
+      <a href="#media">Media</a>
       <a href="#research">Approach</a>
       <a href="cv.pdf" target="_blank">CV</a>
     </div>
@@ -121,8 +122,8 @@
       </article>
             <article class="work-panel" id="work-fragment">
         <figure>
-          <button type="button" class="zoom" aria-label="Enlarge the graphic for Antimicrobial fragments"><img src="assets/work/fragment.webp" alt="Graphical abstract for Antimicrobial fragments" width="1500" height="889" loading="lazy"></button>
-          <figcaption>Graphical abstract from the <a href="https://doi.org/10.1021/acsinfecdis.6c00325" target="_blank" rel="noopener">paper</a> by Onawole, Blaskovich and Zuegg, <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>, resized. Select the image to enlarge it.</figcaption>
+          <button type="button" class="zoom" aria-label="Enlarge the graphic for Antimicrobial fragments"><img src="assets/work/fragment.webp?v=3" alt="Graphical overview of fragment-based XAI: a compound is split into fragments, coloured by whether they raise or lower activity, with a different pattern for S. aureus, E. coli and C. albicans" width="1500" height="618" loading="lazy"></button>
+          <figcaption>Graphical overview. Select the image to enlarge it.</figcaption>
         </figure>
         <div class="work-text">
           <p class="work-venue">ACS Infectious Diseases, 2026</p>
@@ -153,7 +154,11 @@
           </div>
         </div>
       </article>
-      <article class="work-panel no-figure" id="work-tmgnn">
+      <article class="work-panel" id="work-tmgnn">
+        <figure>
+          <button type="button" class="zoom" aria-label="Enlarge the graphic for tmGNN-XAI"><img src="assets/work/tmgnn.webp?v=2" alt="Graphical overview of tmGNN-XAI: from slow DFT and black-box AI, through SMILES input to a fast, explainable and trusted model for transition-metal complex design in catalysis, phototherapy, energy and metallodrugs" width="1500" height="693" loading="lazy"></button>
+          <figcaption>Graphical overview. Select the image to enlarge it.</figcaption>
+        </figure>
         <div class="work-text">
           <p class="work-venue">Journal of Chemical Information and Modeling, 2026</p>
           <h3>Electronic properties of metal complexes from SMILES</h3>
@@ -649,7 +654,21 @@
   </div>
 </section>
 
-  <section id="research" class="statement">
+  <section id="media" class="media" aria-labelledby="media-title">
+  <div class="wrap">
+    <h2 id="media-title">In the media</h2>
+    <p class="section-intro">Features on my research into whether AI explanations can be trusted in antibiotic discovery.</p>
+    <ul class="media-feature">
+      <li><a href="https://insightplus.mja.com.au/2026/44/can-we-trust-ai-predictions-for-antibiotic-discovery" target="_blank" rel="noopener"><span class="outlet">MJA InSight+, November 2026</span><strong>What impact will AI have on antibiotic research?</strong><span class="more">Read the article</span></a></li>
+      <li><a href="https://news.uq.edu.au/2026-06-using-ai-tackle-global-superbug-crisis" target="_blank" rel="noopener"><span class="outlet">UQ News, June 2026</span><strong>Using AI to tackle global superbug crisis</strong><span class="more">Read the story</span></a></li>
+      <li><a href="https://ai.uq.edu.au/explainable-ai-antibiotic-discovery" target="_blank" rel="noopener"><span class="outlet">Artificial Intelligence at UQ</span><strong>Explainable AI for Antibiotic Discovery, featured in &ldquo;100 UQ AI Innovations Changing the World&rdquo;</strong><span class="more">Read the story</span></a></li>
+    </ul>
+    <p class="media-note"><strong>UQ collection:</strong> see <a href="https://ai.uq.edu.au/ai-100" target="_blank" rel="noopener">100 UQ AI Innovations Changing the World</a>.</p>
+    <p class="media-note"><strong>Radio:</strong> interview on the ABC Southern Queensland Breakfast program, June 2026.</p>
+  </div>
+</section>
+
+<section id="research" class="statement">
   <div class="wrap">
     <h2>When should we trust an AI prediction?</h2>
     <div class="story">
@@ -708,7 +727,7 @@
   Abdulmujeeb T. Onawole &middot; Brisbane, Australia
 </footer>
 
-<script src="script.js?v=8"></script>
+<script src="script.js?v=12"></script>
 <button type="button" id="to-top" hidden>Back to top</button>
 </body>
 </html>

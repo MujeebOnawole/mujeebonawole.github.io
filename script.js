@@ -166,7 +166,7 @@ document.addEventListener("DOMContentLoaded", function () {
   /* ---- Reading progress, current section and back to top ---- */
   var bar = one(".progress");
   var toTop = document.getElementById("to-top");
-  var sections = ["programme", "software", "publications", "research"].map(function (id) { return document.getElementById(id); });
+  var sections = ["programme", "software", "publications", "media", "research"].map(function (id) { return document.getElementById(id); });
   function onScroll() {
     var room = root.scrollHeight - window.innerHeight;
     bar.style.transform = "scaleX(" + (room > 0 ? window.scrollY / room : 0) + ")";
